@@ -28,7 +28,7 @@ export function Projects() {
       description:
         "Web application for booking car detailing services. Features service selection, scheduling, and payment integration.",
       icon: Car,
-      technologies: ["TypeScript", "CSS", "Javascript", "Bootstrap"],
+      technologies: ["TypeScript","HTML", "CSS", "Javascript", "Bootstrap"],
       features: [
         "Service selection and customization",
         "Real-time booking and scheduling",
