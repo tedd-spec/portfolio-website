@@ -1,0 +1,164 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to futuristic dark theme with emerald accents */
+  --background: oklch(0.08 0.02 240); /* Deep space navy */
+  --foreground: oklch(0.98 0.01 180); /* Crisp white */
+  --card: oklch(0.12 0.03 240); /* Darker navy cards */
+  --card-foreground: oklch(0.98 0.01 180); /* White card text */
+  --popover: oklch(0.12 0.03 240); /* Darker navy popovers */
+  --popover-foreground: oklch(0.98 0.01 180); /* White popover text */
+  --primary: oklch(0.65 0.18 160); /* Vibrant emerald green */
+  --primary-foreground: oklch(0.08 0.02 240); /* Dark navy on primary */
+  --secondary: oklch(0.25 0.02 240); /* Medium slate */
+  --secondary-foreground: oklch(0.98 0.01 180); /* White on secondary */
+  --muted: oklch(0.2 0.02 240); /* Muted dark slate */
+  --muted-foreground: oklch(0.65 0.01 180); /* Light gray text */
+  --accent: oklch(0.65 0.18 160); /* Emerald accent */
+  --accent-foreground: oklch(0.08 0.02 240); /* Dark navy on accent */
+  --destructive: oklch(0.55 0.25 25); /* Futuristic red */
+  --destructive-foreground: oklch(0.98 0.01 180); /* White on destructive */
+  --border: oklch(0.25 0.02 240); /* Subtle borders */
+  --input: oklch(0.15 0.03 240); /* Dark input fields */
+  --ring: oklch(0.65 0.18 160 / 0.5); /* Emerald focus ring */
+  --chart-1: oklch(0.65 0.18 160); /* Emerald */
+  --chart-2: oklch(0.6 0.2 200); /* Cyan */
+  --chart-3: oklch(0.7 0.15 280); /* Purple */
+  --chart-4: oklch(0.75 0.18 60); /* Yellow */
+  --chart-5: oklch(0.65 0.22 30); /* Orange */
+  --radius: 0.75rem; /* Slightly more rounded for futuristic feel */
+  --sidebar: oklch(0.1 0.03 240); /* Dark sidebar */
+  --sidebar-foreground: oklch(0.98 0.01 180); /* White sidebar text */
+  --sidebar-primary: oklch(0.65 0.18 160); /* Emerald sidebar highlights */
+  --sidebar-primary-foreground: oklch(0.08 0.02 240); /* Dark on sidebar primary */
+  --sidebar-accent: oklch(0.2 0.02 240); /* Sidebar accents */
+  --sidebar-accent-foreground: oklch(0.98 0.01 180); /* White on sidebar accent */
+  --sidebar-border: oklch(0.25 0.02 240); /* Sidebar borders */
+  --sidebar-ring: oklch(0.65 0.18 160 / 0.5); /* Emerald sidebar focus */
+}
+
+.dark {
+  /* Enhanced dark mode tokens for better contrast */
+  --background: oklch(0.06 0.02 240); /* Even deeper space navy */
+  --foreground: oklch(0.99 0.01 180); /* Pure white */
+  --card: oklch(0.1 0.03 240); /* Very dark cards */
+  --card-foreground: oklch(0.99 0.01 180); /* Pure white card text */
+  --popover: oklch(0.1 0.03 240); /* Very dark popovers */
+  --popover-foreground: oklch(0.99 0.01 180); /* Pure white popover text */
+  --primary: oklch(0.7 0.2 160); /* Brighter emerald in dark mode */
+  --primary-foreground: oklch(0.06 0.02 240); /* Deep navy on primary */
+  --secondary: oklch(0.2 0.02 240); /* Dark slate */
+  --secondary-foreground: oklch(0.99 0.01 180); /* Pure white on secondary */
+  --muted: oklch(0.15 0.02 240); /* Very muted dark */
+  --muted-foreground: oklch(0.6 0.01 180); /* Muted light gray */
+  --accent: oklch(0.7 0.2 160); /* Bright emerald accent */
+  --accent-foreground: oklch(0.06 0.02 240); /* Deep navy on accent */
+  --destructive: oklch(0.6 0.28 25); /* Brighter red in dark */
+  --destructive-foreground: oklch(0.99 0.01 180); /* Pure white on destructive */
+  --border: oklch(0.2 0.02 240); /* Darker borders */
+  --input: oklch(0.12 0.03 240); /* Very dark inputs */
+  --ring: oklch(0.7 0.2 160 / 0.6); /* Brighter emerald focus ring */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  /* Added custom futuristic properties */
+  --glow-primary: 0 0 20px oklch(0.65 0.18 160 / 0.3);
+  --glow-secondary: 0 0 15px oklch(0.6 0.2 200 / 0.2);
+  --gradient-primary: linear-gradient(135deg, oklch(0.65 0.18 160), oklch(0.6 0.2 200));
+  --gradient-card: linear-gradient(145deg, oklch(0.12 0.03 240), oklch(0.15 0.03 240));
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Added futuristic background pattern */
+    background-image: radial-gradient(circle at 25% 25%, oklch(0.65 0.18 160 / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, oklch(0.6 0.2 200 / 0.05) 0%, transparent 50%);
+  }
+
+  /* Added custom futuristic utilities */
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+
+  .glow-secondary {
+    box-shadow: var(--glow-secondary);
+  }
+
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: var(--glow-primary);
+    }
+    to {
+      box-shadow: 0 0 30px oklch(0.65 0.18 160 / 0.5);
+    }
+  }
+}
