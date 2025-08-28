@@ -73,14 +73,14 @@ export function Projects() {
       status: "Completed",
       category: "Frontend",
       github: "https://github.com/tedd-spec/portfolio-website",
-      demo: "#",
+      demo: "https://teddymwitiportfolio.netlify.app/",
     },
     {
       title: "Recruitment portal",
       description:
         "A recruitment portal that streamlines job postings, applications, and candidate management for HR teams.",
       icon: Workflow,
-      technologies: ["Laravel", "Bootstrap", "MySQL", "Blade", "PHP"],
+      technologies: ["PHP", "Bootstrap", "MySQL", "Blade", "Laravel"],
       features: [
         "Job posting and management",
         "Application tracking system",

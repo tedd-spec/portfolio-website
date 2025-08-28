@@ -10,7 +10,7 @@ export function Experience() {
       location: "Nairobi, Kenya",
       period: "May 2025 – Aug 2025",
       description:
-        "Collaborated remotely on software development projects using PHP, Laravel, MySQL, and React, delivering features on time for enterprise clients.",
+        "Collaborated(On site) on software development projects using PHP, Laravel, MySQL, and React, delivering features on time for enterprise clients.",
       achievements: [
         "Supported Microsoft 365 Business Central integration, streamlining business processes for remote enterprise operations",
         "Contributed to system monitoring in virtual environments, optimizing performance for distributed systems",
