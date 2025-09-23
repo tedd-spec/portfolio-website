@@ -42,20 +42,21 @@ export function Projects() {
       demo: "https://safi-ride-detailing.netlify.app/",
     },
     {
-      title: "Tours and Travels Website",
+      title: "Simple Ecommerce Website",
       description:
-        "Responsive travel agency website with booking system, destination showcase, and user reviews.",
+        "Responsive e-commerce website with product listings, shopping cart, and checkout functionality using Django, HTML, CSS, and JavaScript.",
       icon: Globe,
-      technologies: ["TypeScript", "Javascript", "CSS",],
+      technologies: ["Django", "Javascript","HTML","Python","CSS",],
       features: [
-        "Interactive destination gallery",
-        "Booking and reservation system",
-        "user reviews and ratings",
+        "Interactive product gallery",
+        "Shopping cart and checkout system",
+        "User authentication and profiles",
+        "Admin panel for product management",
       
       ],
       status: "Completed",
-      category: "Frontend",
-      github: "https://github.com/tedd-spec/Tours-and-travel-website",
+      category: "Full-Stack",
+      github: "https://github.com/tedd-spec/simpleecommerce-site",
       demo: "#",
     },
     {
@@ -90,6 +91,23 @@ export function Projects() {
       status: "In Development",
       category: "Full-Stack",
       github: "https://github.com/tedd-spec/recruitment-portal",
+      demo: "#",
+    },
+     {
+      title: "Tours and Travels Website",
+      description:
+        "Responsive travel agency website with booking system, destination showcase, and user reviews.",
+      icon: Globe,
+      technologies: ["TypeScript", "Javascript", "CSS",],
+      features: [
+        "Interactive destination gallery",
+        "Booking and reservation system",
+        "user reviews and ratings",
+      
+      ],
+      status: "Completed",
+      category: "Frontend",
+      github: "https://github.com/tedd-spec/Tours-and-travel-website",
       demo: "#",
     },
   ]
