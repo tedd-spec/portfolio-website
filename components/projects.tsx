@@ -110,6 +110,23 @@ export function Projects() {
       github: "https://github.com/tedd-spec/Tours-and-travel-website",
       demo: "#",
     },
+     {
+      title: "Electronic E commerce Website",
+      description:
+        "Responsive e-commerce website with product listings, shopping cart, and checkout functionality using Django, HTML, CSS, and JavaScript.",
+      icon: Globe,
+      technologies: ["TypeScript", "Javascript", "CSS",],
+      features: [
+        "Interactive product gallery",
+        "Shopping cart and checkout system",
+        "User authentication and profiles",
+      
+      ],
+      status: "Completed",
+      category: "Frontend",
+      github: "https://github.com/tedd-spec/tedds-digital-store",
+      demo: "https://tedd-digital-store.netlify.app/",
+    },
   ]
 
   const getStatusColor = (status: string) => {
