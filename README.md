@@ -2,7 +2,7 @@
 
 *🌟 Creative Portfolio Website
 
-A modern, responsive portfolio website built using HTML, CSS, TypeScript, and JavaScript. This portfolio showcases projects, skills, and achievements in a clean and elegant design.
+A modern, responsive portfolio website built using Next.js, TypeScript, and JavaScript. This portfolio showcases projects, skills, and achievements in a clean and elegant design.
 
 🚀 Features
 
@@ -18,9 +18,7 @@ Clean and modular code using TypeScript for type safety
 
 🛠 Tech Stack
 
-HTML5
-
-CSS3
+Next.js
 
 JavaScript (ES6+)
 
