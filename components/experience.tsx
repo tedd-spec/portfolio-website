@@ -10,13 +10,13 @@ export function Experience() {
       location: "Nairobi, Kenya",
       period: "May 2025 – Aug 2025",
       description:
-        "Collaborated(On site) on software development projects using PHP, Laravel, MySQL, and React, delivering features on time for enterprise clients.",
+        "Collaborated(On site) on software development projects using PHP, Laravel, MySQL and delivering features on time for enterprise clients.",
       achievements: [
-        "Supported Microsoft 365 Business Central integration, streamlining business processes for remote enterprise operations",
-        "Contributed to system monitoring in virtual environments, optimizing performance for distributed systems",
+        "Supported Microsoft 365 Business Central integration, streamlining business processes for  enterprise operations",
+        "Contributed to system monitoring in physical environments, optimizing performance for distributed systems",
         "Developed and tested responsive web applications, ensuring high-quality user experiences across devices",
       ],
-      technologies: ["Laravel", "MySQL", "React", "Microsoft 365","Business Central","Git"],
+      technologies: ["Laravel", "MySQL", "PHP", "Microsoft 365","Business Central","Git"],
     },
   ]
 
@@ -28,13 +28,13 @@ export function Experience() {
       period: "Aug 2022 – Apr 2026 (Expected)",
       status: "In Progress",
     },
-    {
+    /*{
       degree: "Kenya Certificate of Secondary Education",
       institution: "Ikuu Boys High School",
       location: "Kenya",
       period: "Jan 2018 – Apr 2022",
       status: "Completed",
-    },
+    },*/
   ]
 
   const certifications = [

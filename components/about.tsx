@@ -49,7 +49,7 @@ export function About() {
                   <span className="font-semibold">Experience</span>
                 </div>
                 <p className="text-muted-foreground">
-                  1+ years in software development with focus on remote collaboration and enterprise solutions
+                  1+ years in software development with focus on remote and physical collaboration and enterprise solutions.
                 </p>
               </CardContent>
             </Card>
@@ -60,16 +60,16 @@ export function About() {
               <h3 className="text-2xl font-bold mb-4">Professional Summary</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 I'm a dedicated Computer Science student at Karatina University with over a year of hands-on experience in
-                software development. Skilled in PHP, Laravel, MySQL, and React, I've successfully contributed to
-                enterprise-level projects through internships. My academic journey has equipped me with a solid foundation
-                in algorithms, data structures, and software engineering principles. I thrive in remote work environments,
+                software development. Skilled in PHP, Laravel, MySQL, Python, Django and React, I've successfully contributed to
+                enterprise-level projects. My academic journey has equipped me with a solid foundation
+                in algorithms, data structures and software engineering principles. I thrive in dynamic work environments,
                 demonstrating strong communication and collaboration skills.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Proficient in  collaboration using Git, Microsoft 365, and communication tools, ensuring seamless
+                Proficient in  collaboration using Git, Microsoft 365 and communication tools, ensuring seamless
                 project delivery in distributed teams. Passionate about leveraging AI and machine learning to create
-                impactful solutions, with a strong foundation in networking and ethical hacking. Committed to continuous
-                learning and professional growth in the ever-evolving tech landscape. 
+                impactful solutions. Committed to continuous learning and professional growth in the ever-evolving tech landscape.
+                These experiences have honed my ability to adapt and excel in fast-paced environments.
               </p>
             </div>
 

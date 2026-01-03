@@ -17,11 +17,37 @@ export function Contact() {
     subject: "",
     message: "",
   })
+  const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState<string | null>(null)
+  const [error, setError] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
+    setLoading(true)
+    setSuccess(null)
+    setError(null)
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await res.json()
+
+      if (!res.ok) {
+        throw new Error(data?.message || 'Failed to send message')
+      }
+
+      setSuccess('Message sent — I will get back to you soon!')
+      setFormData({ name: '', email: '', subject: '', message: '' })
+    } catch (err: any) {
+      console.error('Contact form error', err)
+      setError(err?.message || 'Something went wrong')
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -86,7 +112,7 @@ export function Contact() {
             <div>
               <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
               <p className="text-muted-foreground mb-8">
-                I'm always interested in new opportunities, challenging projects, and meaningful collaborations. Whether
+                I'm always interested in new opportunities, challenging projects and meaningful collaborations. Whether
                 you have a project in mind or just want to chat about technology, feel free to reach out.
               </p>
 
@@ -136,8 +162,8 @@ export function Contact() {
                 Available for Remote Work
               </Badge>
               <p className="text-sm text-muted-foreground">
-                Currently open to full-time, part-time, and freelance opportunities in software development, AI/ML
-                projects, and cybersecurity consulting.
+                Currently open to full-time, part-time and freelance opportunities in software development, AI/ML
+                projects and cybersecurity consulting.
               </p>
             </div>
           </div>
@@ -211,10 +237,17 @@ export function Contact() {
                   />
                 </div>
 
-                <Button type="submit" className="w-full glow-primary">
+                <Button type="submit" className="w-full glow-primary" disabled={loading}>
                   <Send className="w-4 h-4 mr-2" />
-                  Send Message
+                  {loading ? 'Sending...' : 'Send Message'}
                 </Button>
+
+                {success && (
+                  <p className="mt-3 text-sm text-green-600">{success}</p>
+                )}
+                {error && (
+                  <p className="mt-3 text-sm text-red-600">{error}</p>
+                )}
               </form>
             </CardContent>
           </Card>

@@ -92,7 +92,7 @@ export function Skills() {
             Technical <span className="gradient-primary bg-clip-text text-transparent">Skills</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A comprehensive toolkit spanning full-stack development, AI/ML, cybersecurity, and modern development
+            A comprehensive toolkit spanning full-stack development, AI/ML, cybersecurity and modern development
             practices.
           </p>        </div>
 

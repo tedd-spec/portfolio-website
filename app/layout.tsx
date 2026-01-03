@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Teddy Mwiti Mwenda - Software Developer & AI Enthusiast",
   description:
     "Full-stack developer specializing in AI/ML, networking, and ethical hacking. Building the future with code.",
-  generator: "v0.app",
+  generator: "teddspec-portfolio-v1.0.0",
 }
 
 export default function RootLayout({
