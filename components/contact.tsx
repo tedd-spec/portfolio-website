@@ -102,7 +102,7 @@ export function Contact() {
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Ready to collaborate on your next project? Let's discuss how we can work together to bring your ideas to
-            life.
+            life. Feel free to reach out via the contact form.
           </p>
         </div>
 
