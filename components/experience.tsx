@@ -25,7 +25,7 @@ export function Experience() {
       degree: "Bachelor of Applied Science (BASc), Computer Science",
       institution: "Karatina University",
       location: "Nyeri, Kenya",
-      period: "Aug 2022 – Apr 2026 (Expected)",
+      period: "Aug 2022 – June 2026",
       status: "In Progress",
     },
     /*{
