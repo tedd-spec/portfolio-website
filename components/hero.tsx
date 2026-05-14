@@ -51,7 +51,7 @@ export function Hero() {
         </div>
 
         <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-          Building the future with full-stack development, AI/ML solutions, and ethical hacking expertise. Passionate
+          Building the future with full-stack development, AI/ML solutions and ethical hacking expertise. Passionate
           about creating innovative web applications that make a difference.
         </p>
 
