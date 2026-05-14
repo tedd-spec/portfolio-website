@@ -63,7 +63,7 @@ export function Hero() {
             </a>
           </Button>
           <Button variant="outline" size="lg" asChild>
-            <a href="/Teddy_Mwiti_Mwenda_CV.pdf" download>
+            <a href="/Teddy_Mwiti_cv.docx" download>
               <Download className="w-5 h-5 mr-2" />
               Download CV
             </a>
