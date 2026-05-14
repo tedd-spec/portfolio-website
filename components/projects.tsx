@@ -6,6 +6,37 @@ import { ExternalLink, Github, Code, Brain, Shield, Globe, Database, Smartphone,
 export function Projects() {
   const projects = [
     {
+  title: "Automotive Parts Predictor",
+  description:
+    "Machine learning model that predicts and recommends automotive parts based on vehicle specifications and maintenance history.",
+  icon: Brain, // or Brain, Cpu, TrendingUp
+  technologies: ["Python", "Scikit-learn", "TensorFlow", "Pandas", "NumPy", "Flask"],
+  features: [
+    "Vehicle specification analysis",
+    "Parts compatibility prediction",
+    "Maintenance history classification",
+    "Predictive analytics for part failures",
+    "RESTful API for predictions",
+    "Model training and validation pipeline",
+  ],
+  github: "https://github.com/tedd-spec/Automotive-parts-predictor",
+  metrics: {
+    accuracy: "92.5%",
+    trainingDatapoints: "10,000+",
+    modelType: "Classification & Recommendation Engine",
+  },
+  keyAlgorithms: [
+    "Random Forest",
+    "Gradient Boosting",
+    "Neural Networks",
+  ],
+  challenges: [
+    "Handling missing vehicle specification data",
+    "Balancing imbalanced dataset classes",
+    "Real-time prediction latency optimization",
+  ],
+},
+    {
       title: "Shoes E-Commerce Platform",
       description:
         "Full-stack e-commerce solution with Laravel backend, React frontend, and integrated payment processing.",
