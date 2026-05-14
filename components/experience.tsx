@@ -26,7 +26,7 @@ export function Experience() {
       institution: "Karatina University",
       location: "Nyeri, Kenya",
       period: "Aug 2022 – June 2026",
-      status: "In Progress",
+      status: "Completed",
     },
     /*{
       degree: "Kenya Certificate of Secondary Education",
