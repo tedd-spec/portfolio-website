@@ -37,7 +37,7 @@ export function About() {
                 </div>
                 <div className="space-y-2">
                   <p className="font-medium">Bachelor of Applied Science (BASc), Computer Science</p>
-                  <p className="text-muted-foreground">Karatina University • Expected 2026</p>
+                  <p className="text-muted-foreground">Karatina University</p>
                 </div>
               </CardContent>
             </Card>
@@ -49,7 +49,7 @@ export function About() {
                   <span className="font-semibold">Experience</span>
                 </div>
                 <p className="text-muted-foreground">
-                  1+ years in software development with focus on remote and physical collaboration and enterprise solutions.
+                  2+ years in software development with focus on remote and physical collaboration and enterprise solutions.
                 </p>
               </CardContent>
             </Card>
